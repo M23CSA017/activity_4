@@ -89,7 +89,7 @@ train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True)
 test_loader = DataLoader(test_data, batch_size=batch_size, shuffle=False)
 
 cnn_model = CNN()
-lr = 0.001
+lr = 0.01
 cnn_optimizer = optim.Adam(cnn_model.parameters(), lr=lr)
 
 
