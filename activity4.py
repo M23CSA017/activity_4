@@ -89,8 +89,10 @@ train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True)
 test_loader = DataLoader(test_data, batch_size=batch_size, shuffle=False)
 
 cnn_model = CNN()
-lr = 0.001
-cnn_optimizer = optim.Adam(cnn_model.parameters(), lr=lr)
+
+
+
+cnn_optimizer = optim.Adam(cnn_model.parameters(), lr=0.01)
 
 
 criterion = nn.CrossEntropyLoss()
